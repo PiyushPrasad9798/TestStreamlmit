@@ -51,8 +51,10 @@ with col2:
 if b1:
     if t1=="":
        st.error("⚠️ Please enter a Username and try again ⚠️")
+       st.toast("❌ Login Failed 🚫")
     elif t2=="":
        st.error("⚠️ Please enter your Password and try again ⚠️")
+       st.toast("❌ Login Failed 🚫")
     else:
        st.success(f"😊 Welcome {t1}!")
        st.toast("✅ Login Successful 🚀")
